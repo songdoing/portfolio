@@ -5,6 +5,7 @@ import {Icon} from 'semantic-ui-react';
 
 const IntroContainer = styled.div`
     position: relative;
+    background : #fff;
     margin : 0 auto;
     margin-top : 70px;
     width : 920px;
@@ -28,7 +29,10 @@ const IntroContainer = styled.div`
         margin-top : 10px;
         border-bottom : 0.5px solid black;
         padding-bottom : 10px;
-        width : 90%;
+        width : 94%;
+    }
+    .skills {
+        font-size : 15px;
     }
 `;
 
@@ -36,7 +40,10 @@ const IconBox = styled.div`
     position :absolute;
     bottom : 0;
     height : 80px;
-    background-color : #444;
+    background: #B993D6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #8CA6DB, #B993D6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #8CA6DB, #B993D6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     width : 100%;
     padding : 13px 0 ;
     .myicon {
@@ -66,11 +73,12 @@ class Intro extends Component {
                         <div className = "flex-6" style={{paddingTop : "30px"}}>
                             <div className = "job">FullStack Developer</div>
                             <div className = "name">Jenny Song</div>
+                            <div className = "skills">HTML/CSS | JavaScript | ReactJS | Redux | NodeJS | Express | MySQL | PHP</div>
                             <br/>
                             <FlexBox>
-                                <div className="flex-2 label">School</div>
+                                <div className="flex-2 label">Whose mom</div>
                                 <div className = "flex-1">&nbsp;</div>
-                                <div className="flex-6">good School</div>
+                                <div className="flex-6">Mason</div>
                             </FlexBox>
                             <FlexBox style={{marginTop: "7px"}}>
                                 <div className="flex-2 label">School</div>
@@ -93,7 +101,7 @@ class Intro extends Component {
                             </a>
                         </div>
                         <div className = "flex-1">
-                            <a href="http://www.mail.google.com">
+                            <a href="mailto:wonjinsongdoing@gmail.com">
                             <Icon className="myicon google" name="google plus" size='huge' style={{color:'white'}}/>
                             </a>
                         </div>

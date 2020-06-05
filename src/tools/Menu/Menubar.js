@@ -21,24 +21,20 @@ const Menu = styled.div`
 class Menubar extends Component {
     menus = [
         {
-            icon : 'user',
+            icon : 'info',
             color : '#4CAF50',
             text : 'Intro'
         },
         {
-            icon : 'react',
+            icon : 'newspaper outline',
             color : '#5CD3F3',
-            text : 'ReactJS'
+            text : 'Resume'
         },
+        
         {
-            icon : 'php',
-            color : '#7478AE',
-            text : 'PHP'
-        },
-        {
-            icon : 'fire',
+            icon : 'computer',
             color : '#F8C52B',
-            text : 'Firebase'
+            text : 'Projects'
         }
     ];
 
